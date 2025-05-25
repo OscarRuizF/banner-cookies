@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Banner de Cookies</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+    #cookie-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 9998;
+    }
+    #cookie-banner {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #000;
+      color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      z-index: 9999;
+      font-family: Arial, sans-serif;
+      width: 320px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.1);
+    }
+    #cookie-banner button {
+      padding: 10px 20px;
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="cookie-overlay"></div>
+  <div id="cookie-banner">
+    <p><strong>Has encontrado al tigre</strong><br>Si quieres ser parte del sorteo, captura el contador y súbelo en historias de Instagram.</p>
+    <button onclick="document.getElementById('cookie-banner').style.display='none'; document.getElementById('cookie-overlay').style.display='none';">Aceptar</button>
+  </div>
+</body>
+</html>
